@@ -102,6 +102,18 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Delete post",
+			"id": "7fd02f3a-ba8b-4123-869e-68ab7b2b4d33",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
