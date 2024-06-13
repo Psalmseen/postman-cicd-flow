@@ -81,6 +81,24 @@
 		},
 		{
 			"name": "Get pictures",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "16abe0a9-f923-41c3-965e-44f0e0bfae7c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+							"    console.log(response.json());\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "3811335b-3251-4e14-875e-8a19d9a6e559",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -105,6 +123,22 @@
 		},
 		{
 			"name": "Delete post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "00f80b78-c5df-4a31-9aa9-b70b31646b9a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "7fd02f3a-ba8b-4123-869e-68ab7b2b4d33",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
